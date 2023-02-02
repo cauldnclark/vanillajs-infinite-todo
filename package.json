@@ -18,6 +18,7 @@
   "license": "MIT",
   "scripts": {
     "build": "webpack",
-    "dev": "webpack-dev-server --port 8070"
+    "dev": "webpack-dev-server --port 8070",
+    "start": "node ./server.js"
   }
 }
