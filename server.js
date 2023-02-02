@@ -5,11 +5,11 @@ var path = require("path");
 var port = process.env.PORT || 8070;
 
 // set the static files location /public/img will be /img for users
-app.use(express.static(__dirname + "/public"));
+app.use(express.static(__dirname + "/dist"));
 
 // send our index.html file to the user for the home page
 app.get("*", function (req, res) {
-  res.sendFile(path.join(__dirname + "/public/index.html"));
+  res.sendFile(path.join(__dirname + "/dist/index.html"));
 });
 
 // start app ===============================================
